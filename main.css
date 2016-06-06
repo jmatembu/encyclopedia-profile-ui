@@ -112,9 +112,13 @@ header input{
 .pro_content li:nth-child(1),
 .pro_content li:nth-child(1) i{
 	 color:#F385C2;
+	 margin-left: 0;
  }
 .pro_content li:nth-child(2) a,
 .pro_content li:nth-child(2) i
 {
 	color:#68D9F7;
+}
+.pro_content ul{
+	padding-left:2rem;
 }
