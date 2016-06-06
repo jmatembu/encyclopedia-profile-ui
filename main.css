@@ -260,21 +260,31 @@ img {
 .tweets {
 	height: 30em;
 	padding: 1.4em 1.2em 0 1.2em;
+	overflow: visible;
+	overflow-x: hidden;
+	overflow-y: scrollbar;
+	-ms-overflow-style: scrollbar;
+	overflow-style: scrollbar;
 }
 .tweets {
 	background-color: #edfbfe;
 }
-.tweets a.load-more,
-.articles a.load-more,
-.comments a.load-more {
+.tweets-container .load-more a ,
+.articles-container .load-more a,
+.comments-container .load-more a {
 	display: block;
 	font-size: 0.75em;
-	width: 100%;
+	width: 85%;
+	margin: 0 auto;
 	text-align: center;
 	text-transform: uppercase;
 	padding: 1.3em 0;
 }
-.tweets a.load-more {
+.tweets-container .load-more {
+	background-color: #edfbfe;
+}
+.tweets-container .load-more a {
+	border-top: 1px solid #97def2;
 	color: #97def2;
 }
 .tweet-container {
@@ -282,7 +292,7 @@ img {
     padding: 0.5em;
 }
 .tweets .tweet-container:last-of-type {
-	border-bottom: 1px solid #97def2;
+	border-bottom: none;
 }
 .tweet-user-image {
 	padding-right: 0.5em;
@@ -327,10 +337,19 @@ img {
 .articles-container h1 {
 	padding-left: 1.4em;
 }
+.articles-container .load-more {
+	background-color: #f1f8ff;
+}
 .articles {
+	position: relative;
 	height: 30em;
 	background-color: #f1f8ff;
 	padding: 1.4em 1.8em 0 1.8em;
+	overflow: visible;
+	overflow-x: hidden;
+	overflow-y: scrollbar;
+	-ms-overflow-style: scrollbar;
+	overflow-style: scrollbar;
 }
 .articles h2 {
 	font-size: 1.3em;
@@ -338,7 +357,7 @@ img {
 	margin-bottom: 0.2em;
 }
 .articles section:last-of-type {
-	border-bottom: 1px solid #b6c5f0;
+	border-bottom: none;
 	padding-bottom: 1em;
 }
 .articles section:last-of-type h2 {
@@ -361,20 +380,35 @@ img {
 	font-size: 0.75em;
 	line-height: 1;
 }
-.articles a.load-more {
+.articles-container .load-more a {
+	border-top: 1px solid #8194e1;
 	color: #8194e1;
 }
 .comments-container h1 {
 	padding-left: 1.4em;
 }
 .comments {
+	position: relative;
 	height: 30em;
 	background-color: #f9f3ff;
 	padding: 1.4em 1.8em 0 1.8em;
+	overflow: visible;
 	overflow-x: hidden;
 	overflow-y: scrollbar;
 	-ms-overflow-style: scrollbar;
 	overflow-style: scrollbar;
+}
+.comments::-webkit-scrollbar {
+	width: 0.3125em;
+	padding-right: 10px;
+}
+.comments::-webkit-scrollbar-track {
+	width: 0.3125em;
+}
+.comments::-webkit-scrollbar-thumb:vertical {
+	height: 20%;
+	border-radius: 5px;
+	box-shadow: inset 0 0 6px #d9c8f5;
 }
 .comments h2 {
 	font-size: 1.3em;
@@ -384,12 +418,21 @@ img {
 .comments h3 {
 	color: #1c42bd;
 }
+.comments-container .load-more {
+	background-color: #f9f3ff;
+}
+.comments-container .load-more a {
+	border-top: 1px solid #b993f8;
+	color: #b993f8;
+}
 .comment {
 	border-bottom: 1px solid #e1dfe0;
 	padding-bottom: 1.25em;
 	margin-bottom: 1.25em;
 }
-
+.comment:last-of-type {
+	border-bottom: none;
+}
 .comment p {
 	line-height: 1.4;
     font-size: 0.9375em;
