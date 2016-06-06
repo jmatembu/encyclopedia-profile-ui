@@ -22,7 +22,25 @@ header {
 	background-color: #FFFFFF;
 	height: 3.4375em;
 }
-
 .container {
 	padding: 0 6.25em;
+}
+
+header input{
+	position:relative;
+	top:.7em;
+	right:-80%;
+	display:inline-block;
+	width:17em;
+	padding: .1em .3em;
+	border:1px solid #D7C3EC;
+}
+/*profile card*/
+.profile{
+	width:86%;
+	margin:3em auto;
+	background:#703F9B;
+}
+.profile img{
+	vertical-align:top;
 }
