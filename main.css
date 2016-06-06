@@ -100,17 +100,21 @@ header input{
 	margin:1em 1em;
 	list-style: none;
 }
-.pro_content li img{
+.pro_content li i{
 	margin-right:.5em;
 	vertical-align: middle;
 }
-.pro_content li a{
+.pro_content li a,
+.pro_content li i{
 	font-weight:500;
 	color:#D4D0CF;
 }
-.pro_content li:nth-child(1){
+.pro_content li:nth-child(1),
+.pro_content li:nth-child(1) i{
 	 color:#F385C2;
  }
-.pro_content li:nth-child(2) a{
+.pro_content li:nth-child(2) a,
+.pro_content li:nth-child(2) i
+{
 	color:#68D9F7;
 }
