@@ -230,6 +230,24 @@ img {
 	display: block;
 	clear: both;
 }
+.scroll {
+	padding-right: 0.3125em;
+}
+.scroll:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.tweets-container .scroll {
+	background-color: #edfbfe;
+}
+.articles-container .scroll {
+	background-color: #f1f8ff;
+}
+.comments-container .scroll {
+	background-color: #f9f3ff;
+}
+
 .tweets-container,
 .articles-container,
 .comments-container {
@@ -241,6 +259,7 @@ img {
 	font-size: 1.4em;
 	margin-top: 1em;
 }
+
 .tweets-container h1 {
 	padding-left: 1em;
 }
@@ -268,6 +287,14 @@ img {
 }
 .tweets {
 	background-color: #edfbfe;
+}
+.tweets::-webkit-scrollbar {
+	position: relative;
+	width: 0.25em;
+}
+.tweets::-webkit-scrollbar-thumb:vertical {
+	border-radius: 5px;
+	box-shadow: inset 0 0 6px #97def2;
 }
 .tweets-container .load-more a ,
 .articles-container .load-more a,
@@ -348,8 +375,6 @@ img {
 	overflow: visible;
 	overflow-x: hidden;
 	overflow-y: scrollbar;
-	-ms-overflow-style: scrollbar;
-	overflow-style: scrollbar;
 }
 .articles h2 {
 	font-size: 1.3em;
@@ -371,6 +396,14 @@ img {
 }
 .articles h3:first-of-type {
 	margin-top: 0.625em;
+}
+.articles::-webkit-scrollbar {
+	position: relative;
+	width: 0.25em;
+}
+.articles::-webkit-scrollbar-thumb:vertical {
+	border-radius: 5px;
+	box-shadow: inset 0 0 6px #8194e1;
 }
 .article-date,
 .article-url,
@@ -395,18 +428,12 @@ img {
 	overflow: visible;
 	overflow-x: hidden;
 	overflow-y: scrollbar;
-	-ms-overflow-style: scrollbar;
-	overflow-style: scrollbar;
 }
 .comments::-webkit-scrollbar {
-	width: 0.3125em;
-	padding-right: 10px;
-}
-.comments::-webkit-scrollbar-track {
-	width: 0.3125em;
+	position: relative;
+	width: 0.25em;
 }
 .comments::-webkit-scrollbar-thumb:vertical {
-	height: 20%;
 	border-radius: 5px;
 	box-shadow: inset 0 0 6px #d9c8f5;
 }
