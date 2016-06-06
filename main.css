@@ -7,7 +7,7 @@
 body {
 	background-color: #F5F5F5;
 	font-size: 16px;
-	font-family: "Roboto", sans-serif;
+	font-family: "Roboto", "Roboto Slab", sans-serif;
 	line-height: 1.7;
 	color: #383838;
 }
@@ -17,7 +17,6 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 }
 h1 {
