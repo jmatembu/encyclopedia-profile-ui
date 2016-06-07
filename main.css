@@ -173,6 +173,7 @@ img {
 .graphWrapper {
 	border-bottom: 1px solid #bababa;
 	height: 15.625em;
+	max-width: 31.97em;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
@@ -184,7 +185,7 @@ img {
 	display: block;
 	clear: both;
 }
-ul.yAxis {
+.yAxis {
 	width: 30%;
 	display: flex;
 	flex-wrap: wrap;
@@ -192,19 +193,22 @@ ul.yAxis {
 	justify-content: space-between;
 	padding-bottom: 2em;
 }
-ul.yAxis li {
+.yAxis li {
 	padding-right: 2em;
 	text-align: right;
 }
-ul.xAxis {
+.xAxis {
 	width: 100%;
 	padding-left: 30%;
 	padding-top: 0.75em;
 	display: flex;
 	justify-content: space-between;
 }
-ul.xAxis li {
+.xAxis li {
 	width: 18%;
+	transform: rotate(45deg);
+	padding-top: 0.5em;
+	padding-left: 1em;
 }
 .bar-graph {
 	height: inherit;
@@ -356,6 +360,7 @@ ul.xAxis li {
 }
 .social {
 	background-color: #FFFFFF;
+	padding-bottom: 3em;
 }
 .social:after {
 	content: "";
