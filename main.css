@@ -35,17 +35,14 @@ h3 {
 h4 {
 	font-size: 0.9375em;
 }
-=======
 
-
->>>>>>> yyr
 header {
 	background-color: #FFFFFF;
 	height: 3.4375em;
 }
-<<<<<<< HEAD
+
 a {
-	color: #607adb;
+	
 	text-decoration: none;
 }
 img {
@@ -117,14 +114,33 @@ img {
 	display: block;
 	clear: both;
 }
+header {
+	position: relative;
+	color: #717171;
+	font-size: 1.2em;
+	font-family: "Roboto Slab",serif;
+	font-weight: bold;
+}
+.logo{
+	width:100%;
+	padding-top:.7em;
+}
+header img{
+	padding-left: 5.2em;
+	width:initial;
+	vertical-align: middle;
+}
+header span:nth-child(2){
+color:#693395;
+}
 header input{
-	position:relative;
-	top:1.5em;
-	right:-75%;
+	position:absolute;
+	top:.5em;
+	right:15em;
 	display:inline-block;
 	width:20em;
 	height:3em;
-	padding: .5em .3em;
+	padding: .3em .3em;
 	border:1px solid #D7C3EC;
 }
 /*profile card*/
@@ -190,7 +206,6 @@ header input{
 }
 .pro_content a{
 	color:#B78CD4;
-	text-decoration: none;
 }
 .pro_content li{
 	display:inline-block;
@@ -208,22 +223,23 @@ header input{
 }
 .pro_content li:nth-child(1),
 .pro_content li:nth-child(1) i{
-	 color:#F385C2;
-	 margin-left: 0;
- }
+	color:#F385C2;
+	margin-left: 0;
+}
 .pro_content li:nth-child(2) a,
 .pro_content li:nth-child(2) i
 {
 	color:#68D9F7;
 }
 .pro_content ul{
+	padding-top: 5em;
 	padding-left:2rem;
 }
 
 /*contribution*/
 .contribution{
 	margin:0 6.25em;
-	padding:0 2.5em;
+	padding:0 2.5em 2em 2.5em;
 	background:#FFFFFF;
 }
 .contribution p{
@@ -250,15 +266,13 @@ header input{
 .contribution li i{
 	padding-right:.5em;
 }
-.contribution li a{
-	text-decoration: none;
-}
+
 .contribution li:nth-child(2) a,
 .contribution li:nth-child(2) i{
-   color:#65D8F7;
+	color:#65D8F7;
 }
 .contribution li:nth-child(3) a{
-   color:#676767;  
+	color:#676767;  
 }
 .contribution img{
 	width:30%;
@@ -266,9 +280,17 @@ header input{
 }
 .open-source{
 	display: inline-block;
-	width:65%;
+	width:60%;
 	margin-left:1.5em;
+	margin-right: 1.5em;
 
+}
+.open-source h3{
+	position: relative;
+}
+.open-source h3>i{
+	position: absolute;
+	right:0;
 }
 .open-source ul{
 	padding-top:1em;
@@ -276,21 +298,98 @@ header input{
 .open-source ul li:first-child{
 	padding-left:0;
 }
-/*payment to paul*/
-.payment h1,
-.payment h3{
-    text-align:center;
+/*gratitude to paul*/
+.gratitude{
+	margin-bottom: 3em;
 }
-.payment h1{
+.gratitude h1,
+.gratitude h3{
+	text-align:center;
+}
+.gratitude h1{
 	padding-top:2em;
 	font-size: 2em;
 	color:#EA37B9;
 }
 .fl-github,.tip,.fl-twitter{
-	width:13em;
-	height:13em;
+	position:relative;
+	margin-top:2em;
+	margin-bottom:.5em;
+	width:14em;
+	height:14em;
 	background:#fff;
 	border-radius: 50%;
+}
+.fl-github{
+	border:7px solid #F9EAED;
+	float:right;
+}
+.tip{
+	margin:2em auto .5em auto;
+	border:7px solid #D5F9DD;
+}
+.fl-twitter{
+	border:7px solid #D6F5FA;
+}
+.fl-github i,.fl-twitter i{
+	position:absolute;
+	top:35%;
+	left:36%;
+}
+.fl-twitter i,.fl-twitter a{
+	color:#56C8E3;
+}
+.fl-twitter a{
+	position:absolute;
+	bottom:2em;
+	left:30%;
+}
+.fl-github p,.tip p,.fl-twitter p{
+	position:absolute;
+	top:1.5em;
+	left:2em;
+	width:9em;
+	line-height: 1.2;
+	text-align:center;
+}
+.fl-github button,.tip button{
+	position:absolute;
+	bottom:2em;
+	color:white;
+	padding:.7em 1em;
+	border:none;
+	border-radius: 2px;
+}
+.fl-github button{
+	left:26%;
+	background: #F24C7C;
+}
+.tip button{
+	left:23%;
+	background: #29B74B;
+}
+.tip input{
+	position:absolute;
+	top:35%;
+	left:10%;
+	width:7em;
+	padding:.5em;
+	font-size: 1.5em;
+	text-align: center;
+	background: #F8F8F8;
+	border:none;
+	outline:none;
+}
+.fl-github+p,.tip+p,.fl-twitter+p{
+	color:#D6D6D6;
+}
+.fl-github+p{
+	padding-right: 2em;
+	clear:right;
+	text-align: right;
+}
+.tip+p{
+	text-align:center;
 }
 
 /*skills*/
@@ -497,8 +596,8 @@ header input{
 	color: #97def2;
 }
 .tweet-container {
-    border-bottom: 1px solid #d9e7ea;
-    padding: 0.5em;
+	border-bottom: 1px solid #d9e7ea;
+	padding: 0.5em;
 }
 .tweets .tweet-container:last-of-type {
 	border-bottom: none;
@@ -644,7 +743,7 @@ header input{
 }
 .comment p {
 	line-height: 1.4;
-    font-size: 0.9375em;
+	font-size: 0.9375em;
 }
 /** MISC **/
 .center {
