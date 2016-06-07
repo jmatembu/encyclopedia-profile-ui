@@ -38,6 +38,9 @@ header {
 	background-color: #FFFFFF;
 	height: 3.4375em;
 }
+ul {
+	list-style: none;
+}
 a {
 	color: #607adb;
 	text-decoration: none;
@@ -123,14 +126,14 @@ img {
 .skills h1 {
 	color: #e639b7;
 }
-.frontend-chart,
-.backend-chart {
+.frontend-graph-container,
+.backend-graph-container {
 	padding: 2em;
 }
-.frontend-chart h2 {
+.frontend-graph-container h2 {
 	color: #f95553;
 }
-.backend-chart h2 {
+.backend-graph-container h2 {
 	color: #4a70eb;
 }
 .skills .row:last-child .col6 {
@@ -166,6 +169,141 @@ img {
 	display: block;
 	text-align: right;
 	padding-right: 0.5em;
+}
+.graphWrapper {
+	border-bottom: 1px solid #bababa;
+	height: 15.625em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 4em 0;
+	padding-right: 1em;
+}
+.graphWrapper:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+ul.yAxis {
+	width: 30%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 2em;
+}
+ul.yAxis li {
+	padding-right: 2em;
+	text-align: right;
+}
+ul.xAxis {
+	width: 100%;
+	padding-left: 30%;
+	padding-top: 0.75em;
+	display: flex;
+	justify-content: space-between;
+}
+ul.xAxis li {
+	width: 18%;
+}
+.bar-graph {
+	height: inherit;
+	width: 70%;
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+}
+.bar-graph li.bar {
+	border-radius: 2px 2px 0 0;
+	list-style: none;
+	padding: 0;
+	width: 16%;
+	bottom: 0;
+}
+.bar-graph li#fb1 {
+	height: 100%;
+	background-color: black;
+}
+.bar-graph li#fb2 {
+	height:75%;
+	background-color: black;
+}
+.bar-graph li#fb3 {
+	height: 100%;
+	background-color: black;
+}
+.bar-graph li#fb4 {
+	height: 40%;
+	background-color: black;
+}
+.bar-graph li#fb5 {
+	height: 18%;
+	background-color: black;
+}
+.bar-graph li#bb1 {
+	height: 100%;
+	background-color: black;
+}
+.bar-graph li#bb2 {
+	height: 75%;
+	background-color: black;
+}
+.bar-graph li#bb3 {
+	height: 100%;
+	background-color: black;
+}
+.bar-graph li#bb4 {
+	height: 40%;
+	background-color: black;
+}
+.bar-graph li#bb5 {
+	height: 18%;
+	background-color: black;
+}
+.bar-graph li#ob1 {
+	height: 100%;
+	background-color: black;
+}
+.bar-graph li#ob2 {
+	height: 75%;
+	background-color: black;
+}
+.bar-graph li#ob3 {
+	height: 100%;
+	background-color: black;
+}
+.bar-graph li#ob4 {
+	height: 40%;
+	background-color: black;
+}
+.bar-graph li#ob5 {
+	height: 18%;
+	background-color: black;
+}
+.bar-graph li#fb1,
+.bar-graph li#bb1,
+.bar-graph li#ob1 {
+	background-color: #ffac42;
+}
+.bar-graph li#fb2,
+.bar-graph li#bb2,
+.bar-graph li#ob2 {
+	background-color: #38b9f0;
+}
+.bar-graph li#fb3,
+.bar-graph li#bb3,
+.bar-graph li#ob3 {
+	background-color: #6ad12c;
+}
+.bar-graph li#fb4,
+.bar-graph li#bb4,
+.bar-graph li#ob4 {
+	background-color: #fa8ab0;
+}
+.bar-graph li#fb5,
+.bar-graph li#bb5,
+.bar-graph li#ob5 {
+	background-color: #f0e210;
 }
 .about-me {
 	background-color: #FFFFFF;
