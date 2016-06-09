@@ -630,11 +630,8 @@ header input{
 	padding: 1.4em 1.2em 0 1.2em;
 	background-color: #edfbfe;
 }
-.articles > section {
-	padding-bottom: 1.25em;
-}
 .articles > section:last-of-type {
-	border-bottom: none;
+	margin-bottom: 1em;
 }
 .articles h2 {
 	font-size: 1.3em;
@@ -644,14 +641,29 @@ header input{
 .articles h2:first-of-type {
 	margin-top: 0;
 }
-.articles h3 {
+.article {
+	padding-bottom: 0.5em;
+	margin-bottom: 0.5em;
+}
+.article:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.articleTitle {
 	color: #1c42bd;
+	width: 100%;
 	line-height: 1.2;
-	margin-top: 0.875em;
+	display: block;
 	font-size: 0.875em;
 }
-.articles h3:first-of-type {
-	margin-top: 0.625em;
+.articleDate,
+.articleSource {
+	display: block;
+	float: left;
+}
+.articleDate {
+	margin-right: 2em;
 }
 .comments h2 {
 	margin-top: 0;
