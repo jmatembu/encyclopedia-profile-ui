@@ -9,11 +9,17 @@
 </head>
 <body>
 	<!-- Top row -->
-	<header>
-		<div class="logo">
-			<img src="assets/images/encyclopedia.jpg" alt=""><span>Encylopedia</span><span>.Modern Developer</span>
+	<header class="top">
+		<div class="container">
+			<div class="row">
+				<div class="logo col8">
+					<img src="assets/images/encyclopedia.jpg" alt=""><span>Encylopedia</span><span>.Modern Developer</span>
+				</div>
+				<div class="col4">
+					<input type="text" placeholder="Search">
+				</div>
+			</div>
 		</div>
-		<input type="text" placeholder="Search">
 	</header> <!-- Top row -->
 
 	<!-- profile -->
@@ -103,7 +109,7 @@
 	<!-- Biography -->
 	<section> 
 		<div class="container">
-			<article class="about-me">
+			<article class="biography">
 				<section>
 					<h2>Biography</h2>
 					<p>Hi folks. I'm Paul. I'm a front-end developer who loves the web. I'm always thinking a lot about how to make you more productive with tools that your workflow, help you make slicker, sexier, mobile web sites and webapps.</p>
@@ -114,16 +120,17 @@
 					<h2>Trivia</h2>
 					<p>I used to host the amazing yayQuery Podcast. I've long loved music and kept the <a href="#">Aurgasm</a> music blog up for 10 years.</p>
 				</section>
-				<!-- TODO: Add font-icon -->
-				<span class="arrow"><a href="#"><i class="fa fa-angle-down fa-2x"></i></a></span>
+				<span class="arrow">
+					<a href="#"><i class="fa fa-angle-down fa-2x"></i></a>
+				</span>
 			</article>
-			<aside class="work-history">
+			<aside class="workHistory">
 				<h2>Work History</h2>
-				<div class="work present">
+				<div class="work currentWork">
 					<h3>Developer Advocate, TPM for Google Chrome</h3>
 					<span>June 1010 - Present</span>
 				</div>
-				<div class="work present">
+				<div class="work currentWork">
 					<h3>jQuery Community</h3>
 					<span>January 2008 - Present</span>
 				</div>
@@ -149,11 +156,16 @@
 			<h1>Skills</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			<p>Praesentium error eum alias sit fugiat explicabo cum ipsa beatae possimus.</p>
-			<div class="skillbar">
-				<div class="frontend-skills"><span>70%</span></div><div class="backend-skills"><span>30%</span></div>
+			<div class="skillsBar">
+				<div class="frontendSkills">
+					<span>70%</span>
+				</div>
+				<div class="backendSkills">
+					<span>30%</span>
+				</div>
 			</div>
 			<div class="row">
-				<div class="col6 frontend-graph-container">
+				<div class="col6 frontendGraphContainer">
 					<h2>Frontend Development</h2>
 					<div class="graphWrapper">
 						<ul class="yAxis">
@@ -162,7 +174,7 @@
 							<li>Competent</li>
 							<li>Learning</li>
 						</ul>
-						<ul class="bar-graph">
+						<ul class="barGraph">
 							<li class="bar" id="fb1"></li>
 							<li class="bar" id="fb2"></li>
 							<li class="bar" id="fb3"></li>
@@ -178,7 +190,7 @@
 						</ul>
 					</div>	
 				</div>
-				<div class="col6 backend-graph-container">
+				<div class="col6 backendGraphContainer">
 					<h2>Backend Development</h2>
 					<div class="graphWrapper">
 						<ul class="yAxis">
@@ -187,7 +199,7 @@
 							<li>Competent</li>
 							<li>Learning</li>
 						</ul>
-						<ul class="bar-graph">
+						<ul class="barGraph">
 							<li class="bar" id="bb1"></li>
 							<li class="bar" id="bb2"></li>
 							<li class="bar" id="bb3"></li>
@@ -214,7 +226,7 @@
 							<li>Competent</li>
 							<li>Learning</li>
 						</ul>
-						<ul class="bar-graph">
+						<ul class="barGraph">
 							<li class="bar" id="ob1"></li>
 							<li class="bar" id="ob2"></li>
 							<li class="bar" id="ob3"></li>
@@ -237,7 +249,7 @@
 	<!-- Social -->
 	<section class="social">
 		<div class="container">
-			<article class="tweets-container">
+			<article class="tweetsContainer">
 				<div class="row">
 					<div class="col6">
 						<h1>Tweets</h1>
@@ -248,20 +260,20 @@
 				</div>
 				<div class="scroll">
 					<div class="tweets">
-						<section class="tweet-container">
+						<section class="tweetContainer">
 							<div class="row tweet">
-								<div class="col3 tweet-user-image">
+								<div class="col3 tweetUserImage">
 									<img src="assets/images/avatar.png">
 								</div>
-								<div class="col9 tweet-content">
-									<div class="tweet-text">
+								<div class="col9 tweetContent">
+									<div class="tweetText">
 										<h4>Paul Irish <small>@paul_irish</small></h4>
-										<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
 									</div>
-									<div class="tweet-time">
+									<div class="tweetTime">
 										<span>8:37 - 29 May 2016</span>
 									</div>
-									<div class="tweet-actions">
+									<div class="tweetActions">
 										<button><i class="fa fa-reply"></i></button>
 										<button><i class="fa fa-retweet"></i></button>
 										<button><i class="fa fa-heart"></i></button>
@@ -269,20 +281,20 @@
 								</div>
 							</div>
 						</section>
-						<section class="tweet-container">
+						<section class="tweetContainer">
 							<div class="row tweet">
-								<div class="col3 tweet-user-image">
+								<div class="col3 tweetUserImage">
 									<img src="assets/images/avatar.png">
 								</div>
-								<div class="col9 tweet-content">
-									<div class="tweet-text">
+								<div class="col9 tweetContent">
+									<div class="tweetText">
 										<h4>Paul Irish <small>@paul_irish</small></h4>
-										<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
 									</div>
-									<div class="tweet-time">
+									<div class="tweetTime">
 										<span>8:37 - 29 May 2016</span>
 									</div>
-									<div class="tweet-actions">
+									<div class="tweetActions">
 										<button><i class="fa fa-reply"></i></button>
 										<button><i class="fa fa-retweet"></i></button>
 										<button><i class="fa fa-heart"></i></button>
@@ -290,20 +302,20 @@
 								</div>
 							</div>
 						</section>
-						<section class="tweet-container">
+						<section class="tweetContainer">
 							<div class="row tweet">
-								<div class="col3 tweet-user-image">
+								<div class="col3 tweetUserImage">
 									<img src="assets/images/avatar.png">
 								</div>
-								<div class="col9 tweet-content">
-									<div class="tweet-text">
+								<div class="col9 tweetContent">
+									<div class="tweetText">
 										<h4>Paul Irish <small>@paul_irish</small></h4>
-										<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
 									</div>
-									<div class="tweet-time">
+									<div class="tweetTime">
 										<span>8:37 - 29 May 2016</span>
 									</div>
-									<div class="tweet-actions">
+									<div class="tweetActions">
 										<button><i class="fa fa-reply"></i></button>
 										<button><i class="fa fa-retweet"></i></button>
 										<button><i class="fa fa-heart"></i></button>
@@ -311,20 +323,20 @@
 								</div>
 							</div>
 						</section>
-						<section class="tweet-container">
+						<section class="tweetContainer">
 							<div class="row tweet">
-								<div class="col3 tweet-user-image">
+								<div class="col3 tweetUserImage">
 									<img src="assets/images/avatar.png">
 								</div>
-								<div class="col9 tweet-content">
-									<div class="tweet-text">
+								<div class="col9 tweetContent">
+									<div class="tweetText">
 										<h4>Paul Irish <small>@paul_irish</small></h4>
-										<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
 									</div>
-									<div class="tweet-time">
+									<div class="tweetTime">
 										<span>8:37 - 29 May 2016</span>
 									</div>
-									<div class="tweet-actions">
+									<div class="tweetActions">
 										<button><i class="fa fa-reply"></i></button>
 										<button><i class="fa fa-retweet"></i></button>
 										<button><i class="fa fa-heart"></i></button>
@@ -332,20 +344,20 @@
 								</div>
 							</div>
 						</section>
-						<section class="tweet-container">
+						<section class="tweetContainer">
 							<div class="row tweet">
-								<div class="col3 tweet-user-image">
+								<div class="col3 tweetUserImage">
 									<img src="assets/images/avatar.png">
 								</div>
-								<div class="col9 tweet-content">
-									<div class="tweet-text">
+								<div class="col9 tweetContent">
+									<div class="tweetText">
 										<h4>Paul Irish <small>@paul_irish</small></h4>
-										<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
 									</div>
-									<div class="tweet-time">
+									<div class="tweetTime">
 										<span>8:37 - 29 May 2016</span>
 									</div>
-									<div class="tweet-actions">
+									<div class="tweetActions">
 										<button><i class="fa fa-reply"></i></button>
 										<button><i class="fa fa-retweet"></i></button>
 										<button><i class="fa fa-heart"></i></button>
@@ -353,20 +365,20 @@
 								</div>
 							</div>
 						</section>
-						<section class="tweet-container">
+						<section class="tweetContainer">
 							<div class="row tweet">
-								<div class="col3 tweet-user-image">
+								<div class="col3 tweetUserImage">
 									<img src="assets/images/avatar.png">
 								</div>
-								<div class="col9 tweet-content">
-									<div class="tweet-text">
+								<div class="col9 tweetContent">
+									<div class="tweetText">
 										<h4>Paul Irish <small>@paul_irish</small></h4>
-										<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
 									</div>
-									<div class="tweet-time">
+									<div class="tweetTime">
 										<span>8:37 - 29 May 2016</span>
 									</div>
-									<div class="tweet-actions">
+									<div class="tweetActions">
 										<button><i class="fa fa-reply"></i></button>
 										<button><i class="fa fa-retweet"></i></button>
 										<button><i class="fa fa-heart"></i></button>
@@ -374,20 +386,20 @@
 								</div>
 							</div>
 						</section>
-						<section class="tweet-container">
+						<section class="tweetContainer">
 							<div class="row tweet">
-								<div class="col3 tweet-user-image">
+								<div class="col3 tweetUserImage">
 									<img src="assets/images/avatar.png">
 								</div>
-								<div class="col9 tweet-content">
-									<div class="tweet-text">
+								<div class="col9 tweetContent">
+									<div class="tweetText">
 										<h4>Paul Irish <small>@paul_irish</small></h4>
-										<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
 									</div>
-									<div class="tweet-time">
+									<div class="tweetTime">
 										<span>8:37 - 29 May 2016</span>
 									</div>
-									<div class="tweet-actions">
+									<div class="tweetActions">
 										<button><i class="fa fa-reply"></i></button>
 										<button><i class="fa fa-retweet"></i></button>
 										<button><i class="fa fa-heart"></i></button>
@@ -397,111 +409,111 @@
 						</section>
 					</div>
 				</div>
-				<div class="load-more">
+				<div class="loadMore">
 					<a href="#">Load More</a>
 				</div>
 			</article>
-			<article class="articles-container">
+			<article class="articlesContainer">
 				<h1>Articles</h1>
 				<div class="scroll">
 					<div class="articles">
 						<section>
 							<h2>2016</h2>
-							<h3 class="article-title">WebKit for Developers</h3>
+							<h3 class="articleTitle">WebKit for Developers</h3>
 							<div class="row">
 								<div class="col4">
-									<span class="article-date">Mar 25, 2016</span>
+									<span class="articleDate">Mar 25, 2016</span>
 								</div>
 								<div class="col8">
-									<span class="article-url">paulirish.com</span>
+									<span class="articleSource">paulirish.com</span>
 								</div>
 							</div>
-							<h3 class="article-title">Advanced Performance Audits With DevTools</h3>
+							<h3 class="articleTitle">Advanced Performance Audits With DevTools</h3>
 							<div class="row">
 								<div class="col4">
-									<span class="article-date">Feb 12, 2016</span>
+									<span class="articleDate">Feb 12, 2016</span>
 								</div>
 								<div class="col8">
-									<span class="article-url">paulirish.com</span>
+									<span class="articleSource">paulirish.com</span>
 								</div>
 							</div>
-							<h3 class="article-title">What's shared in all WebKit browsers</h3>
+							<h3 class="articleTitle">What's shared in all WebKit browsers</h3>
 							<div class="row">
 								<div class="col4">
-									<span class="article-date">Jan 25, 2016</span>
+									<span class="articleDate">Jan 25, 2016</span>
 								</div>
 								<div class="col8">
-									<span class="article-url">paulirish.com</span>
+									<span class="articleSource">paulirish.com</span>
 								</div>
 							</div>
 						</section>
 						<section>
 							<h2>2015</h2>
-							<h3 class="article-title">Why Moving Elements with Translate() is Better Than Pos:abs Tob/left</h3>
+							<h3 class="articleTitle">Why Moving Elements with Translate() is Better Than Pos:abs Tob/left</h3>
 							<div class="row">
 								<div class="col4">
-									<span class="article-date">Dec 18, 2015</span>
+									<span class="articleDate">Dec 18, 2015</span>
 								</div>
 								<div class="col6">
-									<span class="article-url">paulirish.com</span>
+									<span class="articleSource">paulirish.com</span>
 								</div>
 							</div>
-							<h3 class="article-title">Chrome Canary for Developers</h3>
+							<h3 class="articleTitle">Chrome Canary for Developers</h3>
 							<div class="row">
 								<div class="col4">
-									<span class="article-date">Nov 16, 2015</span>
+									<span class="articleDate">Nov 16, 2015</span>
 								</div>
 								<div class="col8">
-									<span class="article-url">paulirish.com</span>
+									<span class="articleSource">paulirish.com</span>
 								</div>
 							</div>
-							<h3 class="article-title">Chrome Canary for Developers</h3>
+							<h3 class="articleTitle">Chrome Canary for Developers</h3>
 							<div class="row">
 								<div class="col4">
-									<span class="article-date">Nov 16, 2015</span>
+									<span class="articleDate">Nov 16, 2015</span>
 								</div>
 								<div class="col8">
-									<span class="article-url">paulirish.com</span>
+									<span class="articleSource">paulirish.com</span>
 								</div>
 							</div>
 						</section>
 						<section>
 							<h2>2014</h2>
-							<h3 class="article-title">Why Moving Elements with Translate() is Better Than Pos:abs Tob/left</h3>
+							<h3 class="articleTitle">Why Moving Elements with Translate() is Better Than Pos:abs Tob/left</h3>
 							<div class="row">
 								<div class="col4">
-									<span class="article-date">Dec 18, 2014</span>
+									<span class="articleDate">Dec 18, 2014</span>
 								</div>
 								<div class="col6">
-									<span class="article-url">paulirish.com</span>
+									<span class="articleSource">paulirish.com</span>
 								</div>
 							</div>
-							<h3 class="article-title">Chrome Canary for Developers</h3>
+							<h3 class="articleTitle">Chrome Canary for Developers</h3>
 							<div class="row">
 								<div class="col4">
-									<span class="article-date">Nov 16, 2014</span>
+									<span class="articleDate">Nov 16, 2014</span>
 								</div>
 								<div class="col8">
-									<span class="article-url">paulirish.com</span>
+									<span class="articleSource">paulirish.com</span>
 								</div>
 							</div>
-							<h3 class="article-title">Chrome Canary for Developers</h3>
+							<h3 class="articleTitle">Chrome Canary for Developers</h3>
 							<div class="row">
 								<div class="col4">
-									<span class="article-date">Nov 16, 2014</span>
+									<span class="articleDate">Nov 16, 2014</span>
 								</div>
 								<div class="col8">
-									<span class="article-url">paulirish.com</span>
+									<span class="articleSource">paulirish.com</span>
 								</div>
 							</div>
 						</section>
 					</div>
 				</div>
-				<div class="load-more">
+				<div class="loadMore">
 					<a href="#">Load More</a>
 				</div>
 			</article>
-			<article class="comments-container">
+			<article class="commentsContainer">
 				<h1>Comments and Answers</h1>
 				<div class="scroll">
 					<div class="comments">
@@ -510,10 +522,10 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt!</p>
 							<div class="row">
 								<div class="col4">
-									<span class="time">a day ago</span>
+									<span class="commentTime">a day ago</span>
 								</div>
 								<div class="col8">
-									<span class="comment-url">paulirish.com</span>
+									<span class="commentSource">paulirish.com</span>
 								</div>
 							</div>
 						</section>
@@ -521,10 +533,10 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt!</p>
 							<div class="row">
 								<div class="col4">
-									<span class="time">3 days ago</span>
+									<span class="commentTime">3 days ago</span>
 								</div>
 								<div class="col8">
-									<span class="comment-url">paulirish.com</span>
+									<span class="commentSource">paulirish.com</span>
 								</div>
 							</div>		
 						</section>
@@ -532,10 +544,10 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt! </p>
 							<div class="row">
 								<div class="col4">	
-									<span class="time">1 week ago</span>
+									<span class="commentTime">1 week ago</span>
 								</div>
 								<div class="col8">
-									<span class="comment-url">medium.com</span>
+									<span class="commentSource">medium.com</span>
 								</div>
 							</div>
 						</section>
@@ -543,10 +555,10 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt!</p>
 							<div class="row">
 								<div class="col4">
-									<span class="time">a day ago</span>
+									<span class="commentTime">a day ago</span>
 								</div>
 								<div class="col8">
-									<span class="comment-url">paulirish.com</span>
+									<span class="commentSource">paulirish.com</span>
 								</div>
 							</div>
 						</section>
@@ -554,10 +566,10 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt!</p>
 							<div class="row">
 								<div class="col4">
-									<span class="time">3 days ago</span>
+									<span class="commentTime">3 days ago</span>
 								</div>
 								<div class="col8">
-									<span class="comment-url">paulirish.com</span>
+									<span class="commentSource">paulirish.com</span>
 								</div>
 							</div>		
 						</section>
@@ -565,16 +577,16 @@
 							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt! </p>
 							<div class="row">
 								<div class="col4">	
-									<span class="time">1 week ago</span>
+									<span class="commentTime">1 week ago</span>
 								</div>
 								<div class="col8">
-									<span class="comment-url">medium.com</span>
+									<span class="commentSource">medium.com</span>
 								</div>
 							</div>
 						</section>
 					</div>
 				</div>
-				<div class="load-more">
+				<div class="loadMore">
 					<a href="#">Load More</a>
 				</div>
 			</article>
