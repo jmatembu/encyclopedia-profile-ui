@@ -364,7 +364,6 @@ header input{
 	text-align:center;
 }
 
-/*skills*/
 .skills:before {
 	content: "";
 	display: block;
@@ -819,4 +818,8 @@ header input{
 }
 .fa-2x {
     font-size: 1.5em;
+    transition: 0.3s
+}
+.fa-2x:hover {
+	color: #8194e1;
 }
