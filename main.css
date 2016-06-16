@@ -83,7 +83,7 @@ img {
 	float: left;
 }
 .container {
-	padding: 0 6.25em;
+	padding: 0 6.25rem;
 }
 .col12:after,
 .container:after,
@@ -111,9 +111,13 @@ header span:nth-child(2){
 color:#693395;
 }
 header input{
-	padding: .3em .3em;
-	border:1px solid #D7C3EC;
+	width:20em;
 	height: 3em;
+	float:right;
+	margin-top:1.5em;
+	padding:.3em .3em;
+	border:1px solid #D7C3EC;
+
 }
 /*profile card*/
 .profile,.contribution{
@@ -133,19 +137,11 @@ header input{
 	height:0;
 	clear:both;
 }
-.pro_img,.pro_content{
-	float:left;
-}
-.pro_img{
-	width:38%;
-}
 .pro_img img{
 	width:100%;
-	vertical-align: top;
+	vertical-align:top;
 }
-.pro_content{
-	width:60%;
-}
+
 .profile input[type="button"]{
 	position:absolute;
 	top:.8em;
@@ -165,15 +161,15 @@ header input{
 	color:white;
 }
 .pro_content p{
-	margin-top:1.5em;
+	margin-top:1em;
 	margin-bottom: 0;
-	font-size:4em;
+	font-size:3em;
 }
 
 .pro_content p:nth-child(3),
 .pro_content p:nth-child(4){
 	margin-top:1em;
-	font-size:1.2em;
+	font-size:1em;
 
 }
 .pro_content a{
@@ -181,7 +177,7 @@ header input{
 }
 .pro_content li{
 	display:inline-block;
-	margin:1em 1em;
+	padding:1em 1em 0;
 	list-style: none;
 }
 .pro_content li i{
@@ -196,7 +192,7 @@ header input{
 .pro_content li:nth-child(1),
 .pro_content li:nth-child(1) i{
 	color:#F385C2;
-	margin-left: 0;
+	padding-left: 0;
 }
 .pro_content li:nth-child(2) a,
 .pro_content li:nth-child(2) i
@@ -204,7 +200,7 @@ header input{
 	color:#68D9F7;
 }
 .pro_content ul{
-	padding-top: 5em;
+	padding-top: 2em;
 	padding-left:2rem;
 }
 
@@ -331,13 +327,17 @@ header input{
 	padding:.7em 1em;
 	border:none;
 	border-radius: 2px;
+	left:50%;
+	-webkit-transform: translate3d(-50%,0,0);
+	-moz-transform: translate3d(-50%,0,0);
+	-ms-transform: translate3d(-50%,0,0);
+	-o-transform: translate3d(-50%,0,0);
+	transform: translate3d(-50%,0,0);
 }
 .fl-github button{
-	left:26%;
 	background: #F24C7C;
 }
 .tip button{
-	left:23%;
 	background: #29B74B;
 }
 .tip input{
@@ -372,6 +372,9 @@ header input{
 .skills {
 	text-align: center;
 	padding-bottom: 4.25em;
+}
+.skills .container {
+	padding: 0 12.25rem;
 }
 .skills h1 {
 	color: #e639b7;
@@ -414,7 +417,6 @@ header input{
 }
 .frontendSkills,
 .backendSkills {
-	font-size: 0.75em;
     color: #FFFFFF;
     float: left;
     font-size: 0.75em;
@@ -430,13 +432,14 @@ header input{
 }
 .graphWrapper {
 	border-bottom: 1px solid #bababa;
-	height: 15.625em;
-	max-width: 31.97em;
+	height: 12.5em;
+	/*max-width: 18.75em;*/
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 4em 0;
+	margin: 4em auto;
 	padding-right: 1em;
+	width: 22.8125em;
 }
 .graphWrapper:after {
 	content: "";
@@ -458,7 +461,6 @@ header input{
 .xAxis {
 	width: 100%;
 	padding-left: 30%;
-	padding-top: 0.75em;
 	display: flex;
 	justify-content: space-between;
 }
