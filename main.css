@@ -373,6 +373,9 @@ header input{
 	text-align: center;
 	padding-bottom: 4.25em;
 }
+.skills .container {
+	padding: 0 12.25rem;
+}
 .skills h1 {
 	color: #e639b7;
 }
@@ -414,7 +417,6 @@ header input{
 }
 .frontendSkills,
 .backendSkills {
-	font-size: 0.75em;
     color: #FFFFFF;
     float: left;
     font-size: 0.75em;
@@ -430,13 +432,14 @@ header input{
 }
 .graphWrapper {
 	border-bottom: 1px solid #bababa;
-	height: 15.625em;
-	max-width: 31.97em;
+	height: 12.5em;
+	/*max-width: 18.75em;*/
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 4em 0;
+	margin: 4em auto;
 	padding-right: 1em;
+	width: 22.8125em;
 }
 .graphWrapper:after {
 	content: "";
@@ -458,7 +461,6 @@ header input{
 .xAxis {
 	width: 100%;
 	padding-left: 30%;
-	padding-top: 0.75em;
 	display: flex;
 	justify-content: space-between;
 }
