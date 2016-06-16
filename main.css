@@ -6,6 +6,12 @@ html {
 	margin: 0;
 	padding: 0;
 }
+input[type="text"],
+input[type="search"] {
+	-moz-appearance:none;
+	-webkit-appearance:none;
+	outline:0;
+}
 body {
 	background-color: #F5F5F5;
 	font-size: 100%;
@@ -94,29 +100,32 @@ img {
 }
 .top {
 	background-color: #FFFFFF;
-	font-family: "Roboto Slab",serif;
-	font-weight: bold;
-	font-size: 1.2em;
-	color: #717171;
-	height: 3.4375em;
+	padding: 0.5em 0;
 }
-.logo{
-	padding-top:.7em;
-}
-.top img {
-	width:initial;
+.logoImage {
+	margin-right: 0.375em;
 	vertical-align: middle;
+	width: initial;
 }
-header span:nth-child(2){
-color:#693395;
+.top h1 {
+	color: #727272;
+	display: inline-block;
+	font-family: "Roboto Slab", serif;
+	font-size: 1.25em;
+	margin: 0;
 }
-header input{
-	width:20em;
-	height: 3em;
+.textPrimary {
+	color: #7b48a7;
+	font-weight: bold;
+}
+.searchForm {
+	border:1px solid #7b48a7;
+	border-radius:2px;
 	float:right;
-	margin-top:1.5em;
-	padding:.3em .3em;
-	border:1px solid #D7C3EC;
+	padding:0.75em;
+	font-size:0.875em;
+	width:20em;
+	color:#7b48a7;
 
 }
 /*profile card*/
