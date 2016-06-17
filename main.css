@@ -28,94 +28,72 @@ h1 {
 }
 h2 {
 	font-size: 1.5rem;
-	margin-bottom: 0.75rem;
+	margin-bottom: 0.875rem;
 }
-
 h3 {
 	font-size: 1.2rem;
 }
-
 h4 {
 	font-size: 0.9375rem;
 }
-
 p {
 	font-size: 1rem;
 	margin-bottom: 1.7rem;
 }
-
 ul {
 	list-style: none;
 }
-
 a {
 	text-decoration: none;
 }
-
 img {
 	width: 100%;
 }
-
 .row {
 	width: 100%;
 }
-
 .col1 {
 	width: 8.333333%;
 }
-
 .col2 {
 	width: 16.66667%;
 }
-
 .col3 {
 	width: 25%;
 }
-
 .col4 {
 	width: 33.33333%;
 }
-
 .col5 {
 	width: 41.66667%;
 }
-
 .col6 {
 	width: 50%;
 }
-
 .col7 {
 	width: 58.33333%;
 }
-
 .col8 {
 	width: 66.66667%;
 }
-
 .col9 {
 	width: 75%;
 }
-
 .col10 {
 	width: 83.33333%;
 }
-
 .col11 {
 	width: 91.66667%;
 }
-
 .col12 {
 	width: 100%;
 }
-
 .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 {
 	float: left;
 }
-
 .container {
 	padding: 0 6.25rem;
 }
-
 .col12:after,
 .container:after,
 .row:after {
@@ -124,18 +102,15 @@ img {
 	display: block;
 	clear: both;
 }
-
 .top {
 	background-color: #FFFFFF;
 	padding: 0.5em 0;
 }
-
 .logoImage {
 	margin-right: 0.375em;
 	vertical-align: middle;
 	width: initial;
 }
-
 .top h1 {
 	color: #727272;
 	display: inline-block;
@@ -143,49 +118,40 @@ img {
 	font-size: 1.25em;
 	margin: 0;
 }
-
 .textPrimary {
 	color: #7b48a7;
 	font-weight: bold;
 }
-
 .searchForm {
-	border: 1px solid #7b48a7;
+	border: 1px solid #743d98;
 	border-radius: 2px;
 	float: right;
 	padding: 0.75em;
 	font-size: 0.875em;
 	width: 20em;
-	color: #7b48a7;
+	color: #743d98;
 }
-
-
 .profile {
 	position: relative;
 }
-
 .profile {
 	background: #743d98;
 	margin-top: 3rem;
 	height: 25.9375rem;
 }
-
 .profile:before {
 	content: "";
 	display: block;
 	height: 0;
 	clear: both;
 }
-
 .slides {
 	position: relative;
 	height: 100%;
 }
-
 .slides img {
 	height: 100%;
 }
-
 .slideIndicators {
 	position: absolute;
 	list-style: none;
@@ -498,7 +464,7 @@ img {
 
 .skills {
 	text-align: center;
-	padding-bottom: 4.25em;
+	padding: 4.25em 0;
 }
 
 .skills .container {
@@ -508,7 +474,9 @@ img {
 .skills h1 {
 	color: #e639b7;
 }
-
+.skills p {
+	margin-bottom: 0;
+}
 .frontendGraphContainer,
 .backendGraphContainer {
 	padding: 2em;
@@ -733,6 +701,7 @@ img {
 .biography h2,
 .workHistory h2 {
 	color: #9f4def;
+	margin-bottom: 1.25rem;
 }
 
 .workHistory {
@@ -893,12 +862,12 @@ img {
 .articlesContainer h1,
 .commentsContainer h1 {
 	padding-left: 1.4em;
-	margin-bottom: 0;
+	margin-bottom: 0.5rem;
 }
 
 .tweetsContainer h1 {
 	padding-left: 1em;
-	margin-bottom: 0;
+	margin-bottom: 0.5rem;
 }
 
 .loadMore a,
@@ -1023,8 +992,8 @@ img {
 
 .comment {
 	border-bottom: 1px solid #e1dfe0;
-	padding-bottom: 1.25em;
-	margin-bottom: 1.25em;
+	padding-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 .comment:last-of-type {
