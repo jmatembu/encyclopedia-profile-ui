@@ -9,541 +9,623 @@
 </head>
 <body>
 	<!-- Top row -->
-	<header>
-		<div class="logo">
-			<img src="assets/images/encyclopedia.jpg" alt=""><span>Encylopedia</span><span>.Modern Developer</span>
+	<header class="top">
+		<div class="container">
+			<div class="row">
+				<div class="col8">
+					<img src="assets/images/encyclopedia.jpg" alt="Logo" class="logoImage">
+					<h1><span class="textPrimary">Encylopedia</span>.Modern Developer</h1>
+				</div>
+				<div class="col4">
+					<input type="search" placeholder="Search..." class="searchForm">
+				</div>
+			</div>
 		</div>
-				
-				
-				<input type="text" placeholder="Search">
-		
 	</header> <!-- Top row -->
 
 	<!-- profile -->
 	<section> 
 		<div class="container">
-			<div class="profile">
-				<div class="pro_img">
-					<img src="assets/images/paul.jpg" alt="paul irish">
+			<article class="row profile">
+				<div class="col5 slides" id="featuredImages">
+					<ol class="slideIndicators">
+						<li class="active"></li>
+						<li></li>
+						<li></li>
+					</ol>
+					<img src="assets/images/paul.jpg" alt="Paul Irish">
 				</div>
-				<div class="pro_content">
-					<input type="button" value="Follow Paul">
-					<p>Paul Irish</p>
-					<p>American front-end engineer and a developer advocate for Google Chrome, the most popular web browser in the world by market share.
-						He is widely recognized as a thought leader and a leading evangelist in web technologies,including JavaScript and CSS.He was named
-						Developer of the Year by The Net Awards in 2014.</p>
-						<p>Currently working on <a href="">Aurgasm ></a></p>
-						<ul>
-							<li><i class="fa fa-map-marker" aria-hidden="true"></i>Silicon Valley, CA</li>
-							<li><i class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/paul_irish?lang=en">@paul_irish</a></li>
-							<li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/paulirish">paulirish</a></li>
-							<li><i class="fa fa-globe" aria-hidden="true"></i><a href="">Homepage</a></li>
-							<li><i class="fa fa-globe" aria-hidden="true"></i><a href="http://www.paulirish.com/">Blog</a></li>
-							<li><i class="fa fa-globe" aria-hidden="true"></i><a href="https://plus.google.com/+GoogleChromeDevelopers/posts">Company</a></li>
+				<div class="col7">
+					<div class="profileIntro">
+						<h1>Paul Irish</h1>
+						<input type="button" value="Follow Paul" class="profileFollow">
+						<p>American front-end engineer and a developer advocate for Google Chrome, the most popular web browser in the world by market share. He is widely recognized as a thought leader and a leading evangelist in web technologies, including JavaScript and CSS.He was named Developer of the Year by The Net Awards in 2014.</p>
+						<p>Currently working on <a href="#">Aurgasm <i class="fa fa-angle-right"></i></a></p>
+					</div>
+					<ul class="profileLinks">
+						<li class="profileLocationLink">
+							<a href="#"><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> Silicon Valley, CA</a>
+						</li>
+						<li class="profileTwitterLink">
+							<a href="https://twitter.com/paul_irish"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i> @paul_irish</a>
+						</li>
+						<li class="profileGithubLink">
+							<a href="https://github.com/paulirish"><i class="fa fa-github fa-2x" aria-hidden="true"></i> paulirish</a>
+						</li>
+						<li>
+							<a href="#"><i class="fa fa-globe fa-2x" aria-hidden="true"></i> Homepage </a>
+						</li>
+						<li>
+							<a href="http://www.paulirish.com/"><i class="fa fa-globe fa-2x" aria-hidden="true"></i> Blog</a>
+						</li>
+						<li>
+							<a href="https://plus.google.com/+GoogleChromeDevelopers/posts"><i class="fa fa-globe fa-2x" aria-hidden="true"></i> Company</a>
+						</li>
+					</ul>
+				</div>
+			</article>		
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="contributions">
+				<h1>Noteworthy Contributions to Humanity</h1>
+				<div class="contributionsList">
+					<article class="contribution">
+						<div class="col4">
+							<img src="assets/images/placeholder.jpg" alt="">
+						</div>
+						<div class="col8 contributionDescription">
+							<h3>Open Source Community</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda dolorem modi, ipsam nam, eveniet optio est laborum, fuga voluptatibus illo consequuntur.</p>
+							<ul class="contributionLinks">
+								<li class="contributionSiteLink">
+									<a href="http://www.paulirish.com/">paulirish.com</a>
+								</li>
+								<li class="contributionTwitterLink">
+									<a href="https://twitter.com/paul_irish?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i> @paul_irish</a>
+								</li>
+								<li class="contributionGithubLink">
+									<a href="https://github.com/paulirish"><i class="fa fa-github" aria-hidden="true"></i> paulirish</a>
+								</li>
+							</ul>
+							<a href="#" class="contributionArrow"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						</div>
+					</article>
+					<article class="contribution">
+						<div class="col4">
+							<img src="assets/images/placeholder.jpg" alt="">
+						</div>
+						<div class="col8 contributionDescription">
+							<h3>jQuery Community</h3>
+							<p>Animi veritatis voluptatem cumque excepturi id, sed molestiae, doloremque saepe commodi consequatur accusamus dolor. Harum assumenda dolorem modi, ipsam nam.</p>
+							<ul class="contributionLinks">
+								<li class="contributionSiteLink">
+									<a href="http://www.paulirish.com/">paulirish.com</a>
+								</li>
+								<li class="contributionTwitterLink">
+									<a href="https://twitter.com/paul_irish?lang=en"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i> @paul_irish</a>
+								</li>
+								<li class="contributionGithubLink">
+									<a href="https://github.com/paulirish"><i class="fa fa-github fa-2x" aria-hidden="true"></i> paulirish</a>
+								</li>
+							</ul>
+							<a href="#" class="contributionArrow"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+							
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section> <!-- End profile Section -->
+
+	<!--gratitude to Paul-->
+	<section class="gratitude">
+		<div class="container">
+			<h1>You Have Likely Benefited from Paul's Work and Altruism</h1>
+			<span>How to show your gratitude:</span>
+			<div class="row gratitudeMethods">
+				<div class="col4">
+					<div class="gratitudeMethod githubMethod">
+						<h4>Favourite his projects on GitHub</h4>
+						<i class="fa fa-github fa-3x" aria-hidden="true"></i>
+						<a href="#">Favourite</a>
+					</div>
+					<small>github.com/<a href="https://github.com/paulirish">paulirish</a></small>
+				</div>
+				<div class="col4">
+					<div class="gratitudeMethod tipMethod">
+						<h4>Tip Paul</h4>
+						<input type="text" value="$10">
+						<button>Send it Now</button>
+					</div>
+					<small>powered by <a href="">Gratipay</a></small>
+				</div>
+				<div class="col4">
+					<div class="gratitudeMethod twitterMethod">
+						<h4>Thank Paul on Twitter or via email</h4>
+						<i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+						<a href="https://twitter.com/paul_irish?lang=en">@paul_irish</a>
+					</div>
+					<small>send email to <a href="mailto:paul@gmail.com">paul@gmail.com</a></small>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Biography -->
+	<section> 
+		<div class="container">
+			<article class="biography">
+				<section>
+					<h2>Biography</h2>
+					<p>Hi folks. I'm Paul. I'm a front-end developer who loves the web. I'm always thinking a lot about how to make you more productive with tools that your workflow, help you make slicker, sexier, mobile web sites and webapps.</p>
+					<p>I work on the <a href="#">Google Chrome</a> team focused on Developer Tooling. Chrome DevTools and everything else Chrome can do to make you a productive web developer.</p>
+					<p>I've developed tools like <a href="#">Modernizr</a>, <a href="#">Yeoman</a>, CSS3 Please and HTML5 Boilerplate, curated HTML5 Rocks, and co-created projects like HTML5 Please, mothereffingtextshadow, mothereffinghsl, Move the Web Forward, Mother-effing Animated GIF, W3Fools, <a href="#">chromestatus.com</a>, HTML5 Readiness, Font-end Coding Standards, Typee Rendering Project.</p>
+				</section>
+				<section>
+					<h2>Trivia</h2>
+					<p>I used to host the amazing yayQuery Podcast. I've long loved music and kept the <a href="#">Aurgasm</a> music blog up for 10 years.</p>
+				</section>
+				<span class="arrow">
+					<a href="#"><i class="fa fa-angle-down fa-2x"></i></a>
+				</span>
+			</article>
+			<aside class="workHistory">
+				<h2>Work History</h2>
+				<div class="work currentWork">
+					<h3>Developer Advocate, TPM for Google Chrome</h3>
+					<span>June 1010 - Present</span>
+				</div>
+				<div class="work currentWork">
+					<h3>jQuery Community</h3>
+					<span>January 2008 - Present</span>
+				</div>
+				<div class="work">
+					<h3>Senior Consultant, Emerging Interactions</h3>
+					<span>Octover 2006 - April 2010</span>
+				</div>
+				<div class="work">
+					<h3>eInvite Ecommerce Manager</h3>
+					<span>June 2004 - July 2006</span>
+				</div>
+				<div class="work">
+					<h3>Writing Tutor</h3>
+					<span>August 2003 - May 2004</span>
+				</div>
+			</aside>
+		</div>
+	</section> <!-- End Biography Section -->
+
+	<!-- Skills -->
+	<section class="skills">
+		<div class="container">
+			<h1>Skills</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<p>Praesentium error eum alias sit fugiat explicabo cum ipsa beatae possimus.</p>
+			<div class="skillsBar">
+				<div class="frontendSkills">
+					<span>70%</span>
+				</div>
+				<div class="backendSkills">
+					<span>30%</span>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col6 frontendGraphContainer">
+					<h2>Frontend Development</h2>
+					<div class="graphWrapper">
+						<ul class="yAxis">
+							<li>Expert</li>
+							<li>Proficient</li>
+							<li>Competent</li>
+							<li>Learning</li>
+						</ul>
+						<ul class="barGraph">
+							<li class="bar" id="fb1"></li>
+							<li class="bar" id="fb2"></li>
+							<li class="bar" id="fb3"></li>
+							<li class="bar" id="fb4"></li>
+							<li class="bar" id="fb5"></li>
+						</ul>
+						<ul class="xAxis">
+							<li>JavaScript</li>
+							<li>HTML/CSS</li>
+							<li>ReactJS</li>
+							<li>AngularJS</li>
+							<li>jQuery</li>
+						</ul>
+					</div>	
+				</div>
+				<div class="col6 backendGraphContainer">
+					<h2>Backend Development</h2>
+					<div class="graphWrapper">
+						<ul class="yAxis">
+							<li>Expert</li>
+							<li>Proficient</li>
+							<li>Competent</li>
+							<li>Learning</li>
+						</ul>
+						<ul class="barGraph">
+							<li class="bar" id="bb1"></li>
+							<li class="bar" id="bb2"></li>
+							<li class="bar" id="bb3"></li>
+							<li class="bar" id="bb4"></li>
+							<li class="bar" id="bb5"></li>
+						</ul>
+						<ul class="xAxis">
+							<li>JavaScript</li>
+							<li>HTML/CSS</li>
+							<li>ReactJS</li>
+							<li>AngularJS</li>
+							<li>jQuery</li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="col6 center">
+					<h2>Other Skills</h2>
+					<div class="graphWrapper">
+						<ul class="yAxis">
+							<li>Expert</li>
+							<li>Proficient</li>
+							<li>Competent</li>
+							<li>Learning</li>
+						</ul>
+						<ul class="barGraph">
+							<li class="bar" id="ob1"></li>
+							<li class="bar" id="ob2"></li>
+							<li class="bar" id="ob3"></li>
+							<li class="bar" id="ob4"></li>
+							<li class="bar" id="ob5"></li>
+						</ul>
+						<ul class="xAxis">
+							<li>Written Communication</li>
+							<li>Problem Solving</li>
+							<li>Project Management</li>
+							<li>Research</li>
+							<li>Public Speaking</li>
 						</ul>
 					</div>
 				</div>
-				
 			</div>
-			<div class="container contribution">
-				<h1>Noteworthy Contributions to Humanity</h1>
-				<div class="col6">
-					<img src="assets/images/placeholder.jpg" alt="">
-					<div class="open-source">
-						<h3>Open Source Community<i class="fa fa-chevron-down" aria-hidden="true"></i></h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda dolorem modi, ipsam nam, eveniet optio est laborum, fuga voluptatibus 
-							illo consequuntur. Nesciunt blanditiis consectetur ipsam explicabo provident, et quisquam.</p>
-							<ul>
-								<li><a href="http://www.paulirish.com/">paulirish.com</a></li>
-								<li><i class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/paul_irish?lang=en">@paul_irish</a></li>
-								<li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/paulirish">paulirish</a></li>
-							</ul>
-						</div>
+		</div>
+	</section> <!-- End Skills -->
 
+	<!-- Social -->
+	<section class="social">
+		<div class="container">
+			<article class="tweetsContainer">
+				<div class="row">
+					<div class="col6">
+						<h1>Tweets</h1>
 					</div>
 					<div class="col6">
-						<img src="assets/images/placeholder.jpg" alt="">
-						<div class="open-source">
-							<h3>jQuery Community<i class="fa fa-chevron-down" aria-hidden="true"></i></h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum assumenda dolorem modi, ipsam nam, eveniet optio est laborum, fuga voluptatibus 
-								illo consequuntur. Nesciunt blanditiis consectetur ipsam explicabo provident, et quisquam.</p>
-								<ul>
-									<li><a href="http://www.paulirish.com/">paulirish.com</a></li>
-									<li><i class="fa fa-twitter" aria-hidden="true"></i><a href="https://twitter.com/paul_irish?lang=en">@paul_irish</a></li>
-									<li><i class="fa fa-github" aria-hidden="true"></i><a href="https://github.com/paulirish">paulirish</a></li>
-								</ul>
-							</div>
-						</div>
-
+						<a class="follow" href="#">follow <span class="handle">@paul_irish <i class="fa fa-twitter"></i></span></a>
 					</div>
-				</section> <!-- End profile Section -->
-
-				<!--gratitude to Paul-->
-				<section>
-					<div class="container gratitude">
-						<h1>You Have Likely Benefited from Paul's Work and Altruism</h1>
-						<h3>How to show your gratitude:</h4>
-							<div class="col4">
-								<div class="fl-github">
-									<p>Favourite his projects on GitHub</p>
-									<i class="fa fa-github fa-4x" aria-hidden="true"></i>
-									<button>FAVOURITE</button>
+				</div>
+				<div class="scroll">
+					<div class="tweets">
+						<section class="tweetContainer">
+							<div class="row tweet">
+								<div class="col3 tweetUserImage">
+									<img src="assets/images/avatar.png">
 								</div>
-								<p>github.com/<a href="https://github.com/paulirish">paulirish</a></p>
-
+								<div class="col9 tweetContent">
+									<div class="tweetText">
+										<h4>Paul Irish <small>@paul_irish</small></h4>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+									</div>
+									<div class="tweetTime">
+										<span>8:37 - 29 May 2016</span>
+									</div>
+									<div class="tweetActions">
+										<button><i class="fa fa-reply"></i></button>
+										<button><i class="fa fa-retweet"></i></button>
+										<button><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
 							</div>
-							<div class="col4">
-								<div class="tip">
-									<p>Tip Paul</p>
-									<input type="number" value="10">
-									<button>SEND IT NOW</button>
+						</section>
+						<section class="tweetContainer">
+							<div class="row tweet">
+								<div class="col3 tweetUserImage">
+									<img src="assets/images/avatar.png">
 								</div>
-								<p>powered by <a href="">Gratipay</a></p>
+								<div class="col9 tweetContent">
+									<div class="tweetText">
+										<h4>Paul Irish <small>@paul_irish</small></h4>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+									</div>
+									<div class="tweetTime">
+										<span>8:37 - 29 May 2016</span>
+									</div>
+									<div class="tweetActions">
+										<button><i class="fa fa-reply"></i></button>
+										<button><i class="fa fa-retweet"></i></button>
+										<button><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
 							</div>
-							<div class="col4">
-								<div class="fl-twitter">
-									<p>Thank Paul on Twitter or via email</p>
-									<i class="fa fa-twitter fa-4x" aria-hidden="true"></i>
-									<a href="https://twitter.com/paul_irish?lang=en">@paul_irish</a>
+						</section>
+						<section class="tweetContainer">
+							<div class="row tweet">
+								<div class="col3 tweetUserImage">
+									<img src="assets/images/avatar.png">
 								</div>
-								<p>send email to <a href="mailto:paul@gmail.com">paul@gmail.com</a></p>
-
+								<div class="col9 tweetContent">
+									<div class="tweetText">
+										<h4>Paul Irish <small>@paul_irish</small></h4>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+									</div>
+									<div class="tweetTime">
+										<span>8:37 - 29 May 2016</span>
+									</div>
+									<div class="tweetActions">
+										<button><i class="fa fa-reply"></i></button>
+										<button><i class="fa fa-retweet"></i></button>
+										<button><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
 							</div>
-
-						</div>
-					</section>
-
-					<!-- Biography -->
-					<section> 
-						<div class="container">
-							<article class="about-me">
-								<section>
-									<h2>Biography</h2>
-									<p>Hi folks. I'm Paul. I'm a front-end developer who loves the web. I'm always thinking a lot about how to make you more productive with tools that your workflow, help you make slicker, sexier, mobile web sites and webapps.</p>
-									<p>I work on the <a href="#">Google Chrome</a> team focused on Developer Tooling. Chrome DevTools and everything else Chrome can do to make you a productive web developer.</p>
-									<p>I've developed tools like <a href="#">Modernizr</a>, <a href="#">Yeoman</a>, CSS3 Please and HTML5 Boilerplate, curated HTML5 Rocks, and co-created projects like HTML5 Please, mothereffingtextshadow, mothereffinghsl, Move the Web Forward, Mother-effing Animated GIF, W3Fools, <a href="#">chromestatus.com</a>, HTML5 Readiness, Font-end Coding Standards, Typee Rendering Project.</p>
-								</section>
-								<section>
-									<h2>Trivia</h2>
-									<p>I used to host the amazing yayQuery Podcast. I've long loved music and kept the <a href="#">Aurgasm</a> music blog up for 10 years.</p>
-								</section>
-								<!-- TODO: Add font-icon -->
-								<span class="arrow"><a href="#"><i class="fa fa-angle-down fa-2x"></i></a></span>
-							</article>
-							<aside class="work-history">
-								<h2>Work History</h2>
-								<div class="work present">
-									<h3>Developer Advocate, TPM for Google Chrome</h3>
-									<span>June 1010 - Present</span>
+						</section>
+						<section class="tweetContainer">
+							<div class="row tweet">
+								<div class="col3 tweetUserImage">
+									<img src="assets/images/avatar.png">
 								</div>
-								<div class="work present">
-									<h3>jQuery Community</h3>
-									<span>January 2008 - Present</span>
+								<div class="col9 tweetContent">
+									<div class="tweetText">
+										<h4>Paul Irish <small>@paul_irish</small></h4>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+									</div>
+									<div class="tweetTime">
+										<span>8:37 - 29 May 2016</span>
+									</div>
+									<div class="tweetActions">
+										<button><i class="fa fa-reply"></i></button>
+										<button><i class="fa fa-retweet"></i></button>
+										<button><i class="fa fa-heart"></i></button>
+									</div>
 								</div>
-								<div class="work">
-									<h3>Senior Consultant, Emerging Interactions</h3>
-									<span>Octover 2006 - April 2010</span>
-								</div>
-								<div class="work">
-									<h3>eInvite Ecommerce Manager</h3>
-									<span>June 2004 - July 2006</span>
-								</div>
-								<div class="work">
-									<h3>Writing Tutor</h3>
-									<span>August 2003 - May 2004</span>
-								</div>
-							</aside>
-						</div>
-					</section> <!-- End Biography Section -->
-
-					<!-- Skills -->
-					<section class="skills">
-						<div class="container">
-							<h1>Skills</h1>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-							<p>Praesentium error eum alias sit fugiat explicabo cum ipsa beatae possimus.</p>
-							<div class="skillbar">
-								<div class="frontend-skills"><span>70%</span></div><div class="backend-skills"><span>30%</span></div>
 							</div>
+						</section>
+						<section class="tweetContainer">
+							<div class="row tweet">
+								<div class="col3 tweetUserImage">
+									<img src="assets/images/avatar.png">
+								</div>
+								<div class="col9 tweetContent">
+									<div class="tweetText">
+										<h4>Paul Irish <small>@paul_irish</small></h4>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+									</div>
+									<div class="tweetTime">
+										<span>8:37 - 29 May 2016</span>
+									</div>
+									<div class="tweetActions">
+										<button><i class="fa fa-reply"></i></button>
+										<button><i class="fa fa-retweet"></i></button>
+										<button><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="tweetContainer">
+							<div class="row tweet">
+								<div class="col3 tweetUserImage">
+									<img src="assets/images/avatar.png">
+								</div>
+								<div class="col9 tweetContent">
+									<div class="tweetText">
+										<h4>Paul Irish <small>@paul_irish</small></h4>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+									</div>
+									<div class="tweetTime">
+										<span>8:37 - 29 May 2016</span>
+									</div>
+									<div class="tweetActions">
+										<button><i class="fa fa-reply"></i></button>
+										<button><i class="fa fa-retweet"></i></button>
+										<button><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section class="tweetContainer">
+							<div class="row tweet">
+								<div class="col3 tweetUserImage">
+									<img src="assets/images/avatar.png">
+								</div>
+								<div class="col9 tweetContent">
+									<div class="tweetText">
+										<h4>Paul Irish <small>@paul_irish</small></h4>
+										<p><a class="tweetMention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
+									</div>
+									<div class="tweetTime">
+										<span>8:37 - 29 May 2016</span>
+									</div>
+									<div class="tweetActions">
+										<button><i class="fa fa-reply"></i></button>
+										<button><i class="fa fa-retweet"></i></button>
+										<button><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="loadMore">
+					<a href="#">Load More</a>
+				</div>
+			</article>
+			<article class="articlesContainer">
+				<h1>Articles</h1>
+				<div class="scroll">
+					<div class="articles">
+						<section>
+							<h2>2016</h2>
+							<div class="article">
+								<a class="articleTitle" href="#">WebKit for Developers</a>
+								<span class="articleDate">Mar 25, 2016</span>
+								<span class="articleSource">paulirish.com</span>
+							</div>
+							<div class="article">
+								<a class="articleTitle" href="#">Advanced Performance Audits With DevTools</a>
+								<span class="articleDate">Feb 12, 2016</span>
+								<span class="articleSource">paulirish.com</span>	
+							</div>
+							<div class="article">
+								<a class="articleTitle" href="#">What's shared in all WebKit browsers</a>
+								<span class="articleDate">Jan 25, 2016</span>
+								<span class="articleSource">paulirish.com</span>
+							</div>
+						</section>
+						<section>
+							<h2>2015</h2>
+							<div class="article">
+								<a class="articleTitle" href="#">Why Moving Elements with Translate() is Better Than Pos:abs Tob/left</a>
+								<span class="articleDate">Dec 18, 2015</span>
+								<span class="articleSource">paulirish.com</span>
+							</div>
+							<div class="article">
+								<a class="articleTitle" href="#">Chrome Canary for Developers</a>
+								<span class="articleDate">Nov 16, 2015</span>
+								<span class="articleSource">paulirish.com</span>
+							</div>
+							<div class="article">
+								<a class="articleTitle" href="#">Chrome Canary for Developers</a>
+								<span class="articleDate">Nov 16, 2015</span>
+								<span class="articleSource">paulirish.com</span>
+							</div>
+						</section>
+						<section>
+							<h2>2014</h2>
+							<div class="article">
+								<a class="articleTitle" href="#">Why Moving Elements with Translate() is Better Than Pos:abs Tob/left</a>
+								<span class="articleDate">Dec 18, 2014</span>
+								<span class="articleSource">paulirish.com</span>
+							</div>
+							<div class="article">
+								<a class="articleTitle" href="#">Chrome Canary for Developers</a>
+								<span class="articleDate">Nov 16, 2014</span>
+								<span class="articleSource">paulirish.com</span>	
+							</div>
+							
+							<div class="article">
+								<a class="articleTitle" href="#">Chrome Canary for Developers</a>
+								<span class="articleDate">Nov 16, 2014</span>
+								<span class="articleSource">paulirish.com</span>	
+							</div>
+						</section>
+						<section>
+							<h2>2013</h2>
+							<div class="article">
+								<a class="articleTitle" href="#">Why Moving Elements with Translate() is Better Than Pos:abs Tob/left</a>
+								<span class="articleDate">Dec 18, 2014</span>
+								<span class="articleSource">paulirish.com</span>
+							</div>
+							<div class="article">
+								<a class="articleTitle" href="#">Chrome Canary for Developers</a>
+								<span class="articleDate">Nov 16, 2014</span>
+								<span class="articleSource">paulirish.com</span>	
+							</div>
+							
+							<div class="article">
+								<a class="articleTitle" href="#">Chrome Canary for Developers</a>
+								<span class="articleDate">Nov 16, 2014</span>
+								<span class="articleSource">paulirish.com</span>	
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="loadMore">
+					<a href="#">Load More</a>
+				</div>
+			</article>
+			<article class="commentsContainer">
+				<h1>Comments and Answers</h1>
+				<div class="scroll">
+					<div class="comments">
+						<h2>2016</h2>
+						<section class="comment">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt!</p>
 							<div class="row">
-								<div class="col6 frontend-chart">
-									<h2>Frontend Development</h2>
-									<div class="chart">
-										Chart will go here
-									</div>
+								<div class="col4">
+									<span class="commentTime">a day ago</span>
 								</div>
-								<div class="col6 backend-chart">
-									<h2>Backend Development</h2>
-									<div class="chart">
-										Chart will go here
-									</div>
+								<div class="col8">
+									<span class="commentSource">paulirish.com</span>
 								</div>
 							</div>
+						</section>
+						<section class="comment">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt!</p>
 							<div class="row">
-								<div class="col6 center">
-									<h2>Other Skills</h2>
-									<div class="chart">
-										Chart will go here
-									</div>
+								<div class="col4">
+									<span class="commentTime">3 days ago</span>
+								</div>
+								<div class="col8">
+									<span class="commentSource">paulirish.com</span>
+								</div>
+							</div>		
+						</section>
+						<section class="comment">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt! </p>
+							<div class="row">
+								<div class="col4">	
+									<span class="commentTime">1 week ago</span>
+								</div>
+								<div class="col8">
+									<span class="commentSource">medium.com</span>
 								</div>
 							</div>
-						</div>
-					</section> <!-- End Skills -->
-
-					<!-- Social -->
-					<section class="social">
-						<div class="container">
-							<article class="tweets-container">
-								<div class="row">
-									<div class="col6">
-										<h1>Tweets</h1>
-									</div>
-									<div class="col6">
-										<a class="follow" href="#">follow <span class="handle">@paul_irish <i class="fa fa-twitter"></i></span></a>
-									</div>
+						</section>
+						<section class="comment">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt!</p>
+							<div class="row">
+								<div class="col4">
+									<span class="commentTime">a day ago</span>
 								</div>
-								<div class="scroll">
-									<div class="tweets">
-										<section class="tweet-container">
-											<div class="row tweet">
-												<div class="col3 tweet-user-image">
-													<img src="assets/images/avatar.png">
-												</div>
-												<div class="col9 tweet-content">
-													<div class="tweet-text">
-														<h4>Paul Irish <small>@paul_irish</small></h4>
-														<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
-													</div>
-													<div class="tweet-time">
-														<span>8:37 - 29 May 2016</span>
-													</div>
-													<div class="tweet-actions">
-														<button><i class="fa fa-reply"></i></button>
-														<button><i class="fa fa-retweet"></i></button>
-														<button><i class="fa fa-heart"></i></button>
-													</div>
-												</div>
-											</div>
-										</section>
-										<section class="tweet-container">
-											<div class="row tweet">
-												<div class="col3 tweet-user-image">
-													<img src="assets/images/avatar.png">
-												</div>
-												<div class="col9 tweet-content">
-													<div class="tweet-text">
-														<h4>Paul Irish <small>@paul_irish</small></h4>
-														<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
-													</div>
-													<div class="tweet-time">
-														<span>8:37 - 29 May 2016</span>
-													</div>
-													<div class="tweet-actions">
-														<button><i class="fa fa-reply"></i></button>
-														<button><i class="fa fa-retweet"></i></button>
-														<button><i class="fa fa-heart"></i></button>
-													</div>
-												</div>
-											</div>
-										</section>
-										<section class="tweet-container">
-											<div class="row tweet">
-												<div class="col3 tweet-user-image">
-													<img src="assets/images/avatar.png">
-												</div>
-												<div class="col9 tweet-content">
-													<div class="tweet-text">
-														<h4>Paul Irish <small>@paul_irish</small></h4>
-														<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
-													</div>
-													<div class="tweet-time">
-														<span>8:37 - 29 May 2016</span>
-													</div>
-													<div class="tweet-actions">
-														<button><i class="fa fa-reply"></i></button>
-														<button><i class="fa fa-retweet"></i></button>
-														<button><i class="fa fa-heart"></i></button>
-													</div>
-												</div>
-											</div>
-										</section>
-										<section class="tweet-container">
-											<div class="row tweet">
-												<div class="col3 tweet-user-image">
-													<img src="assets/images/avatar.png">
-												</div>
-												<div class="col9 tweet-content">
-													<div class="tweet-text">
-														<h4>Paul Irish <small>@paul_irish</small></h4>
-														<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
-													</div>
-													<div class="tweet-time">
-														<span>8:37 - 29 May 2016</span>
-													</div>
-													<div class="tweet-actions">
-														<button><i class="fa fa-reply"></i></button>
-														<button><i class="fa fa-retweet"></i></button>
-														<button><i class="fa fa-heart"></i></button>
-													</div>
-												</div>
-											</div>
-										</section>
-										<section class="tweet-container">
-											<div class="row tweet">
-												<div class="col3 tweet-user-image">
-													<img src="assets/images/avatar.png">
-												</div>
-												<div class="col9 tweet-content">
-													<div class="tweet-text">
-														<h4>Paul Irish <small>@paul_irish</small></h4>
-														<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
-													</div>
-													<div class="tweet-time">
-														<span>8:37 - 29 May 2016</span>
-													</div>
-													<div class="tweet-actions">
-														<button><i class="fa fa-reply"></i></button>
-														<button><i class="fa fa-retweet"></i></button>
-														<button><i class="fa fa-heart"></i></button>
-													</div>
-												</div>
-											</div>
-										</section>
-										<section class="tweet-container">
-											<div class="row tweet">
-												<div class="col3 tweet-user-image">
-													<img src="assets/images/avatar.png">
-												</div>
-												<div class="col9 tweet-content">
-													<div class="tweet-text">
-														<h4>Paul Irish <small>@paul_irish</small></h4>
-														<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
-													</div>
-													<div class="tweet-time">
-														<span>8:37 - 29 May 2016</span>
-													</div>
-													<div class="tweet-actions">
-														<button><i class="fa fa-reply"></i></button>
-														<button><i class="fa fa-retweet"></i></button>
-														<button><i class="fa fa-heart"></i></button>
-													</div>
-												</div>
-											</div>
-										</section>
-										<section class="tweet-container">
-											<div class="row tweet">
-												<div class="col3 tweet-user-image">
-													<img src="assets/images/avatar.png">
-												</div>
-												<div class="col9 tweet-content">
-													<div class="tweet-text">
-														<h4>Paul Irish <small>@paul_irish</small></h4>
-														<p><a class="tweet-mention" href="#">@alexlande</a> (srsly: looks really good! well done. (love that show so hard))</p>
-													</div>
-													<div class="tweet-time">
-														<span>8:37 - 29 May 2016</span>
-													</div>
-													<div class="tweet-actions">
-														<button><i class="fa fa-reply"></i></button>
-														<button><i class="fa fa-retweet"></i></button>
-														<button><i class="fa fa-heart"></i></button>
-													</div>
-												</div>
-											</div>
-										</section>
-									</div>
+								<div class="col8">
+									<span class="commentSource">paulirish.com</span>
 								</div>
-								<div class="load-more">
-									<a href="#">Load More</a>
+							</div>
+						</section>
+						<section class="comment">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt!</p>
+							<div class="row">
+								<div class="col4">
+									<span class="commentTime">3 days ago</span>
 								</div>
-							</article>
-							<article class="articles-container">
-								<h1>Articles</h1>
-								<div class="scroll">
-									<div class="articles">
-										<section>
-											<h2>2016</h2>
-											<h3 class="article-title">WebKit for Developers</h3>
-											<div class="row">
-												<div class="col4">
-													<span class="article-date">Mar 25, 2016</span>
-												</div>
-												<div class="col8">
-													<span class="article-url">paulirish.com</span>
-												</div>
-											</div>
-											<h3 class="article-title">Advanced Performance Audits With DevTools</h3>
-											<div class="row">
-												<div class="col4">
-													<span class="article-date">Feb 12, 2016</span>
-												</div>
-												<div class="col8">
-													<span class="article-url">paulirish.com</span>
-												</div>
-											</div>
-											<h3 class="article-title">What's shared in all WebKit browsers</h3>
-											<div class="row">
-												<div class="col4">
-													<span class="article-date">Jan 25, 2016</span>
-												</div>
-												<div class="col8">
-													<span class="article-url">paulirish.com</span>
-												</div>
-											</div>
-										</section>
-										<section>
-											<h2>2015</h2>
-											<h3 class="article-title">Why Moving Elements with Translate() is Better Than Pos:abs Tob/left</h3>
-											<div class="row">
-												<div class="col4">
-													<span class="article-date">Dec 18, 2015</span>
-												</div>
-												<div class="col6">
-													<span class="article-url">paulirish.com</span>
-												</div>
-											</div>
-											<h3 class="article-title">Chrome Canary for Developers</h3>
-											<div class="row">
-												<div class="col4">
-													<span class="article-date">Nov 16, 2015</span>
-												</div>
-												<div class="col8">
-													<span class="article-url">paulirish.com</span>
-												</div>
-											</div>
-											<h3 class="article-title">Chrome Canary for Developers</h3>
-											<div class="row">
-												<div class="col4">
-													<span class="article-date">Nov 16, 2015</span>
-												</div>
-												<div class="col8">
-													<span class="article-url">paulirish.com</span>
-												</div>
-											</div>
-										</section>
-										<section>
-											<h2>2014</h2>
-											<h3 class="article-title">Why Moving Elements with Translate() is Better Than Pos:abs Tob/left</h3>
-											<div class="row">
-												<div class="col4">
-													<span class="article-date">Dec 18, 2014</span>
-												</div>
-												<div class="col6">
-													<span class="article-url">paulirish.com</span>
-												</div>
-											</div>
-											<h3 class="article-title">Chrome Canary for Developers</h3>
-											<div class="row">
-												<div class="col4">
-													<span class="article-date">Nov 16, 2014</span>
-												</div>
-												<div class="col8">
-													<span class="article-url">paulirish.com</span>
-												</div>
-											</div>
-											<h3 class="article-title">Chrome Canary for Developers</h3>
-											<div class="row">
-												<div class="col4">
-													<span class="article-date">Nov 16, 2014</span>
-												</div>
-												<div class="col8">
-													<span class="article-url">paulirish.com</span>
-												</div>
-											</div>
-										</section>
-									</div>
+								<div class="col8">
+									<span class="commentSource">paulirish.com</span>
 								</div>
-								<div class="load-more">
-									<a href="#">Load More</a>
+							</div>		
+						</section>
+						<section class="comment">
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt! </p>
+							<div class="row">
+								<div class="col4">	
+									<span class="commentTime">1 week ago</span>
 								</div>
-							</article>
-							<article class="comments-container">
-								<h1>Comments and Answers</h1>
-								<div class="scroll">
-									<div class="comments">
-										<h2>2016</h2>
-										<section class="comment">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt!</p>
-											<div class="row">
-												<div class="col4">
-													<span class="time">a day ago</span>
-												</div>
-												<div class="col8">
-													<span class="comment-url">paulirish.com</span>
-												</div>
-											</div>
-										</section>
-										<section class="comment">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt!</p>
-											<div class="row">
-												<div class="col4">
-													<span class="time">3 days ago</span>
-												</div>
-												<div class="col8">
-													<span class="comment-url">paulirish.com</span>
-												</div>
-											</div>		
-										</section>
-										<section class="comment">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt! </p>
-											<div class="row">
-												<div class="col4">	
-													<span class="time">1 week ago</span>
-												</div>
-												<div class="col8">
-													<span class="comment-url">medium.com</span>
-												</div>
-											</div>
-										</section>
-										<section class="comment">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt!</p>
-											<div class="row">
-												<div class="col4">
-													<span class="time">a day ago</span>
-												</div>
-												<div class="col8">
-													<span class="comment-url">paulirish.com</span>
-												</div>
-											</div>
-										</section>
-										<section class="comment">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt!</p>
-											<div class="row">
-												<div class="col4">
-													<span class="time">3 days ago</span>
-												</div>
-												<div class="col8">
-													<span class="comment-url">paulirish.com</span>
-												</div>
-											</div>		
-										</section>
-										<section class="comment">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum sit voluptatibus fugit ad placeat maiores mollitia. Nesciunt ad ea est deserunt! </p>
-											<div class="row">
-												<div class="col4">	
-													<span class="time">1 week ago</span>
-												</div>
-												<div class="col8">
-													<span class="comment-url">medium.com</span>
-												</div>
-											</div>
-										</section>
-									</div>
+								<div class="col8">
+									<span class="commentSource">medium.com</span>
 								</div>
-								<div class="load-more">
-									<a href="#">Load More</a>
-								</div>
-							</article>
-						</div>
-					</section> <!-- End Social -->
-					<!-- Footer -->
-					<footer>
+							</div>
+						</section>
+					</div>
+				</div>
+				<div class="loadMore">
+					<a href="#">Load More</a>
+				</div>
+			</article>
+		</div>
+	</section> <!-- End Social -->
+	<!-- Footer -->
+	<footer>
 
-					</footer> <!-- End Footer -->
-				</body>
-				</html>
-
-
-
-
-
+	</footer> <!-- End Footer -->
+</body>
+</html>
