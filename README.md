@@ -5,5 +5,5 @@ We were provided with the UI as an image (png format), which we converted into a
 To work on this project, we used Git and Github. Joseph created the initial repository and added Yu as a collaborator.
 
 ## Team
-Yerui Yu - [@yyrcat](https://github.com/yyrcat)
-Joseph M. Matembu - [@jmatembu](https://github.com/jmatembu)
+* Yerui Yu - [@yyrcat](https://github.com/yyrcat)
+* Joseph M. Matembu - [@jmatembu](https://github.com/jmatembu)
