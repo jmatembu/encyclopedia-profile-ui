@@ -1,7 +1,7 @@
 var entireData = {
 	app: {
-		appName: "Encylopedia. Modern Developer",
-		appImage: "assets/images/encyclopedia.jpg"
+		name: "Encylopedia. Modern Developer",
+		logo: "assets/images/encyclopedia.jpg"
 	},
 	profile: {
 		name: "Paul Irish",
